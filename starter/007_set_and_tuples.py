@@ -1,4 +1,4 @@
-str1 = " hello"
+str1 = " helo"
 print(set(str1))
 set1 = {1, 3, 2, 0.5}
 set2 = {3, 0.5, 4}
@@ -17,3 +17,13 @@ for ch in str1:
         bul = False
         break
 print(bul)
+
+
+def check_unique(string):
+    for ch in string:
+        if str1.count(ch) > 1:
+            return False
+    return True
+
+
+print(check_unique(str1))
