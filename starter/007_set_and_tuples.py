@@ -1,4 +1,4 @@
-str1 = " helo"
+str1 = " hello"
 print(set(str1))
 set1 = {1, 3, 2, 0.5}
 set2 = {3, 0.5, 4}
