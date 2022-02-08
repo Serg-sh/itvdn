@@ -23,3 +23,11 @@ user1 = User(name="alex", age=30)
 print(user1.name, user1.age)
 user1.age = "20"
 print(user1.name, user1.age)
+user1.age = -20
+user1.name = "Bob"
+print(user1.name, user1.age)
+user1.age = 20.5
+print(user1.name, user1.age)
+user1.age = 25
+user1.name = "Johnny"
+print(user1.name, user1.age)
