@@ -19,8 +19,10 @@ class SuperUser(User):
 user = User(name="user", age=30)
 su = SuperUser(name="su", age=35)
 
+
 def show_access(obj):
     obj.access_database()
+
 
 show_access(user)
 show_access(su)
