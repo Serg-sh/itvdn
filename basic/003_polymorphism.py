@@ -1,28 +1,22 @@
 class User:
-    def __init__(self, age, name):
+    def __init__(self, age, name, user_type):
         self.age = age
         self.name = name
-        self.__user_type = "user"
+        self.__user_type = user_type
 
-    @staticmethod
-    def access_database():
-        print("access denied")
+    def access_database(self):
+        if self.__user_type != "superuser":
+            print("access denied")
+        else:
+            print("access granted")
 
 
 class SuperUser(User):
-    __user_type = "superuser"
-
-    def access_database(self):
-        print("access granted")
+    pass
 
 
-user = User(name="user", age=30)
-su = SuperUser(name="su", age=35)
+user = User(name="user", age=30, user_type="user")
+su = SuperUser(name="su", age=35, user_type="superuser")
 
-
-def show_access(obj):
-    obj.access_database()
-
-
-show_access(user)
-show_access(su)
+user.access_database()
+su.access_database()
