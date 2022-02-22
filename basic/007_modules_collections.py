@@ -22,13 +22,10 @@ class Core:
 
 
 class Calc(Core):
-    def __parse(self, a_b_op: str):
+    def parse(self, a_b_op: str):
         a, b, op = a_b_op.split(" ")
+        # написать проверки
         return Core()._calculate(a=int(a), b=int(b), op=op)
-
-    @property
-    def parse(self):
-        return self.__parse
 
 
 def main():
