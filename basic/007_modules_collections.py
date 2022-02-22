@@ -3,7 +3,7 @@ import math
 
 class Core:
     def __init__(self):
-        self.__opperations = {
+        self.__operations = {
             "sum": lambda a, b: a + b,
             "diff": lambda a, b: a - b,
             "prod": lambda a, b: a * b,
@@ -14,11 +14,11 @@ class Core:
         }
 
     def _calculate(self, a, b, op):
-        return self.__opperations[op](a, b)
+        return self.__operations[op](a, b)
 
     @property
     def opperations(self):
-        return self.__opperations
+        return self.__operations
 
 
 class Calc(Core):
