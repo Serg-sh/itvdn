@@ -25,12 +25,15 @@ class Calc(Core):
     def parse(self, a_b_op: str):
         a, b, op = a_b_op.split(" ")
         # написать проверки
-        return Core()._calculate(a=int(a), b=int(b), op=op)
+        return self._calculate(a=int(a), b=int(b), op=op)
 
 
 def main():
-    value = input(f"Введите 2 числа и операцию из списка: {Core().opperations.keys()} через пробел \n")
-    print(Calc().parse(value))
+    while True:
+        value = input(f"Введите 2 числа и операцию из списка: {Calc().opperations.keys()} через пробел \n")
+        if value == "quit":
+            break
+        print(Calc().parse(value))
 
 
 if __name__ == "__main__":
