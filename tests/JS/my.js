@@ -1,5 +1,8 @@
 "use strickt";
 
+
+
+
 // let salaries = {
 //     John: 100,
 //     Ann: 160,
