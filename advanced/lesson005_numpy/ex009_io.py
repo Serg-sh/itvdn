@@ -46,7 +46,7 @@ print(results8)
 
 data9 = """
 190 2 3.45
-40 5 6.98"""
+40 5 6.95"""
 results9 = numpy.genfromtxt(StringIO(data9),
                             dtype=(numpy.uint8, numpy.uint8, numpy.float16))
 print(results9)
